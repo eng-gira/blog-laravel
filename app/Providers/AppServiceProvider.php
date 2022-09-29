@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //  Just a simple validation for illustration.
         Gate::define('admin', function (User $user) {
             return $user->username == 'Admin';
         });
